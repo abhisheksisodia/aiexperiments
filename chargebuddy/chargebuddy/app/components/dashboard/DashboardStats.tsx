@@ -1,7 +1,7 @@
 'use client';
 
 import { Battery, Gauge, Wallet } from "lucide-react";
-import { Card } from "../ui/Card";
+import { Card } from "@/components/ui/card";
 import { useDashboardStats } from "@/lib/hooks";
 
 export function DashboardStats() {
