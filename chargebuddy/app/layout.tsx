@@ -1,3 +1,4 @@
+import { AuthProvider } from './context/AuthContext';
 import { Providers } from './providers';
 import './globals.css';
 
@@ -9,9 +10,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Providers>
-          {children}
-        </Providers>
+        <AuthProvider>
+          <Providers>
+            {children}
+          </Providers>
+        </AuthProvider>
       </body>
     </html>
   );
